@@ -8,6 +8,7 @@
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.55; max-width: 42rem; margin: 0 auto; padding: 1.25rem; color: #1a1a1a; }
     h1 { font-size: 1.5rem; margin-top: 0; }
     h2 { font-size: 1.1rem; margin-top: 1.75rem; }
+    h3 { font-size: 1rem; margin-top: 1.25rem; }
     p, li { font-size: 0.95rem; }
     ul { padding-left: 1.25rem; }
     .muted { color: #555; font-size: 0.9rem; }
@@ -16,18 +17,21 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p class="muted"><strong>Seedemo</strong> · Last updated: May 2, 2026</p>
+  <p class="muted"><strong>Seedemo</strong> · Last updated: June 14, 2026</p>
 
   <p>
-    This Privacy Policy describes how Seedemo (“we,” “us,” or “our”) collects, uses, and shares information
-    when you use the Seedemo mobile application for iOS (“App”). By using the App, you agree to this policy.
+    This Privacy Policy describes what information Seedemo (“we,” “us,” or “our”) collects,
+    how we collect it, how we use and share it, and your choices when you use the Seedemo
+    mobile application for iOS (“App”). By using the App, you agree to this policy.
     If you do not agree, please do not use the App.
   </p>
 
   <div class="box">
-    <strong>Summary.</strong> Seedemo is built for capturing music ideas (voice and text). We use your account
-    to sync content you choose to store with our service providers. We do not sell your personal information.
-    We do not use your information for third‑party advertising or “tracking” as described in Apple’s App Privacy labels.
+    <strong>Summary.</strong> Seedemo is built for capturing music ideas (voice and text).
+    We sync content you choose to store with our service providers. We do not sell your personal information
+    and do not use it for third‑party advertising or “tracking” as described in Apple’s App Privacy labels.
+    If you use AI Transcribe, we send recording audio to <strong>OpenAI (Whisper)</strong> only after you
+    tap Transcribe and allow in the App. We do not send voice data to third‑party AI when you save a recording.
   </div>
 
   <h2>1. Who we are</h2>
@@ -39,87 +43,132 @@
   <h2>2. Information we collect</h2>
   <p>We collect the following categories of information, consistent with disclosures in the App Store:</p>
 
-  <h2>2.1 Account and contact information</h2>
+  <h3>2.1 Account and contact information</h3>
   <ul>
-    <li><strong>Name.</strong> If you sign in with Apple or Google, we may receive a display name associated with your account.</li>
-    <li><strong>Email address.</strong> Used to create and manage your account (for example, via Sign in with Apple or Google).</li>
-    <li><strong>User ID.</strong> A unique identifier assigned to your account in our backend to distinguish your data from other users.</li>
+    <li><strong>Name.</strong> A display name associated with your account, if provided by Sign in with Apple or Google.</li>
+    <li><strong>Email address.</strong> Used to create and manage your account.</li>
+    <li><strong>User ID.</strong> A unique identifier in our backend to distinguish your data from other users.</li>
   </ul>
 
-  <h2>2.2 Content you create (“User Content”)</h2>
+  <h3>2.2 Content you create (“User Content”)</h3>
   <ul>
-    <li><strong>Audio data.</strong> Voice recordings and related audio you capture in the App, stored locally on your device and, when you use cloud features, backed up to our infrastructure.</li>
-    <li><strong>Other user content.</strong> Text notes, lyrics, tags, transcripts generated from your recordings, version history of your seeds, and similar materials you save in the App.</li>
+    <li><strong>Audio data.</strong> Voice recordings you capture in the App, stored on your device and, when you use cloud features, backed up to our infrastructure.</li>
+    <li><strong>Other user content.</strong> Text notes, lyrics, tags, transcripts, version history of your seeds, and similar materials you save in the App.</li>
   </ul>
 
-  <h2>2.3 Purchases and subscriptions</h2>
+  <h3>2.3 Purchases and subscriptions</h3>
   <p>
-    If you purchase Seedemo Pro or other paid offerings, <strong>Apple processes payments</strong> through In‑App Purchase.
+    If you purchase Seedemo Pro, <strong>Apple processes payments</strong> through In‑App Purchase.
     We do not receive your full payment card number. We and our subscription partner receive information about
-    whether your subscription is active and related purchase history as needed to unlock features in the App.
+    whether your subscription is active and related purchase history as needed to unlock Pro features.
   </p>
 
-  <h2>2.4 Information we do not intend to collect</h2>
+  <h3>2.4 Information we do not intend to collect</h3>
   <p>
-    The App is not designed to collect contacts from your address book, precise location, health data, or photos from your library
+    The App is not designed to collect contacts, precise location, health data, or photos from your library
     for its core features. If we add such features later, we will update this policy and, where required, request permission in the App.
   </p>
 
-  <h2>3. How we use information</h2>
-  <p>We use information for the following purposes:</p>
+  <h3>2.5 How we collect information</h3>
+  <p>We collect information in these ways:</p>
   <ul>
-    <li><strong>App functionality:</strong> authenticate you; sync and store your seeds; provide playback, search, tags, trash/recovery windows, and subscription entitlements; operate security and abuse prevention; provide customer support when you contact us.</li>
-    <li><strong>AI features:</strong> when you request transcription or other AI-assisted features, audio or text you submit may be sent to model providers solely to return results to you, subject to fair-use and plan limits described in the App.</li>
+    <li><strong>Account sign‑in:</strong> when you authenticate with Sign in with Apple or Google, we receive account identifiers and related profile fields those services provide.</li>
+    <li><strong>In‑App creation:</strong> when you record audio, type notes, add tags, or edit seeds in the App.</li>
+    <li><strong>Device permissions:</strong> when you grant microphone access to record audio (requested by iOS when you use recording features).</li>
+    <li><strong>Cloud sync and storage:</strong> when you are signed in and use features that store or sync your seeds to our backend.</li>
+    <li><strong>Subscriptions:</strong> when you purchase or restore Seedemo Pro through Apple’s In‑App Purchase; our subscription partner validates entitlement status.</li>
+    <li><strong>AI transcription (optional):</strong> only when you tap <strong>AI Transcribe</strong> and tap <strong>Allow</strong> in the in‑App consent screen. We then send the <strong>audio from that recording</strong> to our servers and to <strong>OpenAI (Whisper)</strong> to return transcription text. We do <strong>not</strong> automatically send audio to third‑party AI when you save a recording.</li>
+    <li><strong>Support:</strong> when you contact us by email.</li>
+  </ul>
+
+  <h2>3. How we use information</h2>
+  <p>We use the information above for the following purposes:</p>
+  <ul>
+    <li><strong>Provide the App:</strong> authenticate you; store and sync your seeds; enable playback, search, tags, trash/recovery, and account management.</li>
+    <li><strong>Subscriptions:</strong> determine and maintain Seedemo Pro access.</li>
+    <li><strong>AI transcription:</strong> convert speech to text when you explicitly request transcription, subject to plan limits described in the App. Transcription results are saved as part of your seeds if you keep them.</li>
+    <li><strong>Security and operations:</strong> protect the service, prevent abuse, and maintain reliability.</li>
+    <li><strong>Support:</strong> respond when you contact us.</li>
   </ul>
   <p>
     We do <strong>not</strong> use your information for third‑party advertising, and we do not sell your personal information.
-    We do not use User IDs or other data for “tracking” as defined in Apple’s App Tracking Transparency framework.
+    We do not use your data for “tracking” as defined in Apple’s App Tracking Transparency framework.
+    We do not use your audio for third‑party AI model training.
   </p>
 
-  <h2>4. Service providers (processors)</h2>
-  <p>We rely on vendors that process data on our behalf under contractual safeguards:</p>
+  <h2>4. How we share information and service providers</h2>
+  <p>
+    We share personal information only as described below. We do not sell personal information.
+  </p>
+
+  <h3>4.1 Third‑party AI services</h3>
+  <p>When you use optional AI features, we may share data with the following AI providers:</p>
+  <ul>
+    <li>
+      <strong>OpenAI (Whisper)</strong> — <strong>What:</strong> audio from the recording you choose to transcribe.
+      <strong>When:</strong> only after you tap AI Transcribe and Allow in the App.
+      <strong>Why:</strong> speech‑to‑text to return transcription text to you.
+      Audio is not sent for advertising or sold to third parties.
+    </li>
+    <li>
+      <strong>Anthropic</strong> — <strong>What:</strong> text derived from your content (not raw audio).
+      <strong>When:</strong> only if you use certain optional Pro AI features that rely on it, routed through our servers.
+      <strong>Why:</strong> to return AI‑assisted results to you (for example, semantic search or insights, if available in your version of the App).
+    </li>
+  </ul>
+
+  <h3>4.2 Other service providers (processors)</h3>
+  <p>We rely on vendors that process data on our behalf:</p>
   <ul>
     <li><strong>Supabase</strong> — authentication, database, and cloud storage for your account and content.</li>
     <li><strong>Apple</strong> — Sign in with Apple and In‑App Purchase.</li>
     <li><strong>Google</strong> — Google sign‑in, if you choose it.</li>
-    <li><strong>OpenAI</strong> — speech‑to‑text (for example, Whisper) when you request transcription of audio.</li>
-    <li><strong>Anthropic</strong> — text analysis for certain Pro features (for example, semantic search or insights), using text derived from your content, routed through our servers.</li>
     <li><strong>RevenueCat</strong> — subscription status and purchase validation to manage Pro access.</li>
   </ul>
+
+  <h3>4.3 Protection by service providers</h3>
   <p>
-    Each provider’s use of data is governed by their own policies and our agreements with them. We only send what is needed
-    to provide the feature you use.
+    We require service providers that process personal information on our behalf—including third‑party AI providers—to
+    protect your information with contractual and technical safeguards that provide the <strong>same or equivalent protection</strong>
+    for your data as described in this Privacy Policy (including Section 8). We share only the data needed to provide the
+    feature you use. Each provider’s processing is also subject to their published policies and our agreements with them.
   </p>
 
-  <h2>5. Legal bases (EEA / UK users)</h2>
+  <h2>5. Your choices (including AI transcription)</h2>
+  <p>
+    <strong>AI Transcribe:</strong> You may decline AI transcription in the in‑App consent screen or tap Not Now.
+    If you have not allowed AI transcription, you can review status under Settings → Privacy &amp; Permissions → AI Transcription
+    and open the consent screen from there. You may use the App without AI transcription.
+  </p>
+  <p>
+    Depending on where you live, you may have rights to access, correct, delete, or export personal information, or to object to certain processing.
+    To exercise these rights, email us at the address in Section 1. You may also adjust iOS permissions (for example, microphone) in iOS Settings.
+    You may delete your account in the App, as described in our Terms of Use.
+  </p>
+  <p>
+    <strong>California residents:</strong> We do not sell personal information. California law may grant you additional rights;
+    you may designate an authorized agent where permitted by law.
+  </p>
+
+  <h2>6. Legal bases (EEA / UK users)</h2>
   <p>
     If applicable law requires a “legal basis,” we process personal data to perform our contract with you (provide the App),
     based on our legitimate interests in operating and securing the service (where not overridden by your rights),
-    or with your consent where required (for example, optional communications if we introduce them).
+    or with your consent where required (for example, AI transcription and optional communications if we introduce them).
   </p>
 
-  <h2>6. Retention</h2>
+  <h2>7. Retention</h2>
   <p>
     We keep your information as long as your account is active and as needed to provide the App. Content you delete may be
     retained in trash for a limited period (for example, up to 30 days) before permanent deletion, as described in the App.
-    Backups may persist for a short additional period in ordinary course. If you ask us to delete your account, we will delete
-    or anonymize personal data unless we must retain certain records for legal reasons.
+    Backups may persist for a short additional period. If you delete your account, we will delete or anonymize personal data
+    unless we must retain certain records for legal reasons.
   </p>
 
-  <h2>7. Security</h2>
+  <h2>8. Security</h2>
   <p>
     We use technical and organizational measures appropriate to the nature of the service (including encryption in transit and access controls).
     No method of transmission or storage is 100% secure; we cannot guarantee absolute security.
-  </p>
-
-  <h2>8. Your choices and rights</h2>
-  <p>
-    Depending on where you live, you may have rights to access, correct, delete, or export personal information, or to object to certain processing.
-    To exercise these rights, email us at the address in Section 1. You may also adjust permissions in iOS Settings for the App where applicable.
-  </p>
-  <p>
-    <strong>California residents:</strong> California law may grant you additional rights (including “Do Not Sell” — we do not sell personal information).
-    You may designate an authorized agent where permitted by law.
   </p>
 
   <h2>9. Children</h2>
